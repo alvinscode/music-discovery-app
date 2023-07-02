@@ -39,3 +39,7 @@ Make your change.
 Run the entire test suite again, confirming that all tests pass including the ones you just added.
 
 Send a GitHub Pull Request to the main repository’s main branch. GitHub Pull Requests are the expected method of code collaboration on this project.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
