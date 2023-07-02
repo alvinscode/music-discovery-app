@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchFeaturedArtists = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/songs?_limit=3&_sort=likes&_order=desc');
+        const response = await axios.get('http://localhost:3000/songs?_limit=1&_sort=likes&_order=desc');
         setFeaturedArtists(response.data);
       } catch (error) {
         console.error('Error fetching featured artists:', error);
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="wrapper">
       <h1 className='hometitle'>Welcome to Music Discovery App!</h1>
-      <h2>Featured Artists</h2>
+      <h2>Featured Artist</h2>
       <ul className="featuredlist" style={{ display: 'flex' }}>
         {featuredArtists.map((song) => (
           <li key={song.artist}>
