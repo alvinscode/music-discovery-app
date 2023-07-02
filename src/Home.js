@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchFeaturedArtists = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/songs?_limit=1&_sort=likes&_order=desc');
+        const response = await axios.get('https://music-discovery-app.onrender.com/songs?_limit=1&_sort=likes&_order=desc');
         setFeaturedArtists(response.data);
       } catch (error) {
         console.error('Error fetching featured artists:', error);
