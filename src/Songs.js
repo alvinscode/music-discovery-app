@@ -40,19 +40,20 @@ const Songs = () => {
 
   return (
     <div className="songlist">
-      <h1>Songs</h1>
+      <h1>Song List</h1>
       <ul className='songs'>
+        
         {sortedSongs.map((song) => (
-          <li key={song.id}>
-            <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px' }} />
+          <li key={song.id}>      
+            <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px', marginTop: '100px' }} />
             <div>
               <p className="title">{song.title}</p>
               <p className="artist">{song.artist}</p>
               <p className="likes">Likes: {song.likes}</p>
             </div>
             <div className='buttons'>
-            <button onClick={() => handleLike(song.id)} className='like'>Like</button>{' '}
-            <button onClick={() => handleDelete(song.id)} className='delete'>Delete</button>
+            <button onClick={() => handleLike(song.id)} className='like'>❤️</button>{' '}
+            <button onClick={() => handleDelete(song.id)} className='delete'>❌</button>  
             </div>
           </li>
         ))}
