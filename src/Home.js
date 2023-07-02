@@ -22,10 +22,10 @@ const Home = () => {
     <div className="wrapper">
       <h1 className='hometitle'>Welcome to Music Discovery App!</h1>
       <h2>Featured Artists</h2>
-      <ul className="featuredlist">
+      <ul className="featuredlist" style={{ display: 'flex' }}>
         {featuredArtists.map((song) => (
           <li key={song.artist}>
-            <img src={song.albumArt} alt="Album Art" style={{ width: '300px', height: '300px', marginTop: '10px' }} />
+            <img src={song.albumArt} alt="Album Art" style={{ width: '300px', height: '300px', marginRight: '100px' }} />
             <p className='homeartist'>{song.artist}</p>
           </li>
         ))}

@@ -5,7 +5,7 @@
       "artist": "Taylor Swift",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
       "id": 3,
-      "likes": 19
+      "likes": 21
     },
     {
       "title": "you should see me in a crown",
@@ -32,14 +32,14 @@
       "title": "MOJABI GHOST",
       "artist": "Tainy, Bad Bunny",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273de7b9af78fbdda96c5a0635b",
-      "likes": 7,
+      "likes": 8,
       "id": 7
     },
     {
       "title": "Boy's a Liar Pt. 2",
       "artist": "PinkPantheress, Ice Spice",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b27342c5ba689b2e7cbc208a8fa7",
-      "likes": 23,
+      "likes": 26,
       "id": 8
     }
   ]
