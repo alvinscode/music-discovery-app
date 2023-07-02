@@ -7,14 +7,14 @@ const Songs = () => {
 
   // I chose to use axios here because I was originally going to fetch from an external API but I have decided against it for now.
   useEffect(() => {
-    axios.get('http://localhost:3000/songs').then((response) => {
+    axios.get('https://music-discovery-app.onrender.com/songs').then((response) => {
       setSongs(response.data);
     });
   }, []);
 
   // Delete button
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/songs/${id}`).then(() => {
+    axios.delete(`https://music-discovery-app.onrender.com/songs/${id}`).then(() => {
       setSongs((prevSongs) => prevSongs.filter((song) => song.id !== id));
     });
   };
@@ -25,7 +25,7 @@ const Songs = () => {
     const updatedLikes = likedSong.likes + 1;
 
     axios
-      .put(`http://localhost:3000/songs/${id}`, { ...likedSong, likes: updatedLikes })
+      .put(`https://music-discovery-app.onrender.com/songs/${id}`, { ...likedSong, likes: updatedLikes })
       .then(() => {
         setSongs((prevSongs) =>
           prevSongs.map((song) => {

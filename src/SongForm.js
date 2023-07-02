@@ -10,7 +10,7 @@ const SongForm = () => {
   const [songPreview, setSongPreview] = useState(null);
 
   const onSongAdded = () => {
-    axios.get('http://localhost:3000/songs').then((response) => {
+    axios.get('https://music-discovery-app.onrender.com/songs').then((response) => {
       console.log(response.data);
     });
   };
@@ -25,7 +25,7 @@ const SongForm = () => {
       likes: 0
     };
 
-    axios.post('http://localhost:3000/songs', newSong).then(() => {
+    axios.post('https://music-discovery-app.onrender.com/songs', newSong).then(() => {
       setTitle('');
       setArtist('');
       setAlbumArt('');

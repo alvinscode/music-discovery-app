@@ -32,7 +32,7 @@
       "title": "MOJABI GHOST",
       "artist": "Tainy, Bad Bunny",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273de7b9af78fbdda96c5a0635b",
-      "likes": 9,
+      "likes": 11,
       "id": 7
     },
     {
@@ -55,6 +55,13 @@
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273c58e22815048f8dfb1aa8bd0",
       "likes": 30,
       "id": 10
+    },
+    {
+      "title": "vampire",
+      "artist": "olivia rodrigo",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b2731e5e75dc1d878a0007cb6525",
+      "likes": 2,
+      "id": 11
     }
   ]
 }
