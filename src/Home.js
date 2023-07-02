@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Home.css'
 
 const Home = () => {
   const [featuredArtists, setFeaturedArtists] = useState([]);
@@ -18,7 +19,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="wrapper">
       <h1>Welcome to Music Discovery App!</h1>
       <h2>Featured Artists</h2>
       <ul>
