@@ -25,3 +25,17 @@ In a new terminal,
 $ cd server
 $ json-server --watch db.json
 ```
+
+## Contributor's Guide
+
+Fork the repository on GitHub.
+
+Run the tests to confirm they all pass on your system. If they don’t, you’ll need to investigate why they fail.
+
+Write tests that demonstrate your bug or feature. Ensure that they fail.
+
+Make your change.
+
+Run the entire test suite again, confirming that all tests pass including the ones you just added.
+
+Send a GitHub Pull Request to the main repository’s main branch. GitHub Pull Requests are the expected method of code collaboration on this project.
