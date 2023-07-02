@@ -5,18 +5,21 @@ import './Songs.css'
 const Songs = () => {
   const [songs, setSongs] = useState([]);
 
+  // I chose to use axios here because I was originally going to fetch from an external API but I have decided against it for now.
   useEffect(() => {
     axios.get('http://localhost:3000/songs').then((response) => {
       setSongs(response.data);
     });
   }, []);
 
+  // Delete button
   const handleDelete = (id) => {
     axios.delete(`http://localhost:3000/songs/${id}`).then(() => {
       setSongs((prevSongs) => prevSongs.filter((song) => song.id !== id));
     });
   };
-
+  
+  // Like button
   const handleLike = (id) => {
     const likedSong = songs.find((song) => song.id === id);
     const updatedLikes = likedSong.likes + 1;
