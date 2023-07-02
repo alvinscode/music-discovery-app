@@ -2,6 +2,11 @@
     font-weight: bold;
 }
 
-.p {
-    float: right;
+.songlist {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.like{
+    margin-right: 100px;
 }

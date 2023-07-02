@@ -4,11 +4,17 @@ import './NavBar.css'
 
 function NavBar() {
   return (
-    <div className="nav">
-      <nav>
-        <Link exact to="/" className="items">Home</Link>
-        <Link to="/songs" className="items">Songs</Link>
-        <Link to="/add-song" className="items">Add Song</Link>
+    <div>
+      <nav className="nav">
+        <Link exact to="/" className="site-title">Music Discovery App</Link>
+        <ul>
+          <li>
+            <Link to="/songs" className="items">Songs</Link>
+          </li>
+          <li>
+            <Link to="/add-song" className="items">Add Song</Link>
+          </li>
+        </ul>
       </nav>
     </div>
   );

@@ -1,14 +1,16 @@
 html, body, #root { height: 100%; }
 
 .wrapper {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
     height: 100%;
+    padding-left: 5%;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
   }
+
+.hometitle {
+    text-align: left;
+}

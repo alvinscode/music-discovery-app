@@ -39,9 +39,9 @@ const Songs = () => {
   const sortedSongs = [...songs].sort((a, b) => b.likes - a.likes);
 
   return (
-    <div className="wrapper">
+    <div className="songlist">
       <h1>Songs</h1>
-      <ul>
+      <ul className='songs'>
         {sortedSongs.map((song) => (
           <li key={song.id}>
             <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px' }} />
@@ -50,8 +50,10 @@ const Songs = () => {
               <p className="artist">{song.artist}</p>
               <p className="likes">Likes: {song.likes}</p>
             </div>
-            <button onClick={() => handleLike(song.id)}>Like</button>
-            <button onClick={() => handleDelete(song.id)}>Delete</button>
+            <div className='buttons'>
+            <button onClick={() => handleLike(song.id)} className='like'>Like</button>{' '}
+            <button onClick={() => handleDelete(song.id)} className='delete'>Delete</button>
+            </div>
           </li>
         ))}
       </ul>

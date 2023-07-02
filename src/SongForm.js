@@ -40,7 +40,7 @@ const SongForm = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="songform">
       <h1>Add Song</h1>
       <form onSubmit={handleSubmit}>
         <label>

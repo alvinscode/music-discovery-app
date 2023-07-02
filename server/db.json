@@ -5,41 +5,41 @@
       "artist": "Taylor Swift",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
       "id": 3,
-      "likes": 6
+      "likes": 17
     },
     {
       "title": "you should see me in a crown",
       "artist": "Billie Eilish",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce",
-      "likes": 11,
+      "likes": 14,
       "id": 4
     },
     {
       "title": "Chemical",
       "artist": "Post Malone",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273f76f8deeba5370c98ad38f1c",
-      "likes": 3,
+      "likes": 15,
       "id": 5
     },
     {
       "title": "Attention",
       "artist": "Doja Cat",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b27324b893fb9e7953ebc9517c6a",
-      "likes": 1,
+      "likes": 7,
       "id": 6
     },
     {
       "title": "MOJABI GHOST",
       "artist": "Tainy, Bad Bunny",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b273de7b9af78fbdda96c5a0635b",
-      "likes": 2,
+      "likes": 5,
       "id": 7
     },
     {
       "title": "Boy's a Liar Pt. 2",
       "artist": "PinkPantheress, Ice Spice",
       "albumArt": "https://i.scdn.co/image/ab67616d0000b27342c5ba689b2e7cbc208a8fa7",
-      "likes": 1,
+      "likes": 22,
       "id": 8
     }
   ]
