@@ -22,7 +22,11 @@ const Songs = () => {
       <ul>
         {songs.map((song) => (
           <li key={song.id}>
-            {song.title} - {song.artist}
+            <img src={song.albumArt} alt="Album Art" />
+            <div>
+              <p>{song.title}</p>
+              <p>{song.artist}</p>
+            </div>
             <button onClick={() => handleDelete(song.id)}>Delete</button>
           </li>
         ))}

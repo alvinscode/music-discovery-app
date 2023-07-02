@@ -9,6 +9,12 @@
       "title": "Song 2",
       "artist": "Artist 2",
       "id": 2
+    },
+    {
+      "title": "Tally",
+      "artist": "BLACKPINK",
+      "albumArt": "https://images.genius.com/93c8a423c50d81c3e4fbf04876d70957.1000x1000x1.png",
+      "id": 3
     }
   ]
 }
