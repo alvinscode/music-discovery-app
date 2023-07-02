@@ -6,6 +6,8 @@ const SongForm = () => {
   const [artist, setArtist] = useState('');
   const [albumArt, setAlbumArt] = useState('');
 
+  const [songPreview, setSongPreview] = useState(null);
+
   const onSongAdded = () => {
     axios.get('http://localhost:3000/songs').then((response) => {
       console.log(response.data);
@@ -26,8 +28,14 @@ const SongForm = () => {
       setTitle('');
       setArtist('');
       setAlbumArt('');
+      setSongPreview(null);
       onSongAdded();
     });
+  };
+
+  const handleAlbumArtChange = (event) => {
+    setAlbumArt(event.target.value);
+    setSongPreview(event.target.value);
   };
 
   return (
@@ -46,8 +54,10 @@ const SongForm = () => {
         <br />
         <label>
           Album Art:
-          <input type="text" value={albumArt} onChange={(e) => setAlbumArt(e.target.value)} />
+          <input type="text" value={albumArt} onChange={handleAlbumArtChange} />
         </label>
+        <br />
+        {songPreview && <img src={songPreview} alt="Album Art" />}
         <br />
         <button type="submit">Add</button>
       </form>
