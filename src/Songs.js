@@ -44,7 +44,7 @@ const Songs = () => {
       <ul>
         {sortedSongs.map((song) => (
           <li key={song.id}>
-            <img src={song.albumArt} alt="Album Art" style={{ width: '400px', height: '400px' }} />
+            <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px' }} />
             <div>
               <p>{song.title}</p>
               <p>{song.artist}</p>

@@ -24,7 +24,7 @@ const Home = () => {
       <ul>
         {featuredArtists.map((song) => (
           <li key={song.artist}>
-            <img src={song.albumArt} alt="Album Art" style={{ width: '400px', height: '400px' }} />
+            <img src={song.albumArt} alt="Album Art" style={{ width: '300px', height: '300px' }} />
             <p>{song.artist}</p>
           </li>
         ))}
