@@ -25,8 +25,8 @@ const Home = () => {
       <ul className="featuredlist">
         {featuredArtists.map((song) => (
           <li key={song.artist}>
-            <img src={song.albumArt} alt="Album Art" style={{ width: '300px', height: '300px' }} />
-            <p>{song.artist}</p>
+            <img src={song.albumArt} alt="Album Art" style={{ width: '300px', height: '300px', marginTop: '10px' }} />
+            <p className='homeartist'>{song.artist}</p>
           </li>
         ))}
       </ul>

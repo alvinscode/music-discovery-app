@@ -40,12 +40,12 @@ const Songs = () => {
 
   return (
     <div className="songlist">
-      <h1>Song List</h1>
+      <h1>Top Songs</h1>
       <ul className='songs'>
         
         {sortedSongs.map((song) => (
           <li key={song.id}>      
-            <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px', marginTop: '100px' }} />
+            <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px', marginTop: '20px'}} />
             <div>
               <p className="title">{song.title}</p>
               <p className="artist">{song.artist}</p>
