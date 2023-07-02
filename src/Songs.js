@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Songs = () => {
@@ -10,6 +10,12 @@ const Songs = () => {
     });
   }, []);
 
+  const handleDelete = (id) => {
+    axios.delete(`http://localhost:8000/songs/${id}`).then(() => {
+      setSongs((prevSongs) => prevSongs.filter((song) => song.id !== id));
+    });
+  };
+
   return (
     <div>
       <h1>Songs</h1>
@@ -17,6 +23,7 @@ const Songs = () => {
         {songs.map((song) => (
           <li key={song.id}>
             {song.title} - {song.artist}
+            <button onClick={() => handleDelete(song.id)}>Delete</button>
           </li>
         ))}
       </ul>

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const SongForm = () => {
+const SongForm = ({ onSongAdded }) => {
   const [title, setTitle] = useState('');
   const [artist, setArtist] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post('http://localhost:8000/songs', { title, artist }).then(() => {
+    axios.post('http://localhost:8000/songs', { title, artist }).then((response) => {
       setTitle('');
       setArtist('');
     });
