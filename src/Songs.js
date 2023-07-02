@@ -41,7 +41,7 @@ const Songs = () => {
   return (
     <div className="songlist">
       <h1>Song List</h1>
-      <ul className='songs' style={{ display: 'flex' }}>
+      <ul className='songs' style={{ display: 'flex', overflowX: 'auto', maxWidth: '100%' }}>
         
         {sortedSongs.map((song) => (
           <li key={song.id}>      
