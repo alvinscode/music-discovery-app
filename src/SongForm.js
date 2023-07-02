@@ -6,13 +6,27 @@ const SongForm = () => {
   const [artist, setArtist] = useState('');
   const [albumArt, setAlbumArt] = useState('');
 
+  const onSongAdded = () => {
+    axios.get('http://localhost:8000/songs').then((response) => {
+      console.log(response.data);
+    });
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post('http://localhost:8000/songs', { title, artist, albumArt }).then(() => {
+    const newSong = {
+      title,
+      artist,
+      albumArt,
+      likes: 0
+    };
+
+    axios.post('http://localhost:8000/songs', newSong).then(() => {
       setTitle('');
       setArtist('');
       setAlbumArt('');
+      onSongAdded();
     });
   };
 
@@ -31,7 +45,7 @@ const SongForm = () => {
         </label>
         <br />
         <label>
-          Album Art URL:
+          Album Art:
           <input type="text" value={albumArt} onChange={(e) => setAlbumArt(e.target.value)} />
         </label>
         <br />

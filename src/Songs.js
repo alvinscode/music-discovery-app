@@ -16,22 +16,38 @@ const Songs = () => {
     });
   };
 
+  const handleLike = (id) => {
+    const likedSong = songs.find((song) => song.id === id);
+    const updatedLikes = likedSong.likes + 1;
+
+    axios
+      .put(`http://localhost:8000/songs/${id}`, { ...likedSong, likes: updatedLikes })
+      .then(() => {
+        setSongs((prevSongs) =>
+          prevSongs.map((song) => {
+            if (song.id === id) {
+              return { ...song, likes: updatedLikes };
+            }
+            return song;
+          })
+        );
+      });
+  };
+
   return (
     <div>
       <h1>Songs</h1>
       <ul>
         {songs.map((song) => (
           <li key={song.id}>
-            <img
-              src={song.albumArt}
-              alt="Album Art"
-              style={{ width: '400px', height: '400px' }} // Adjust the width and height
-            />
+            <img src={song.albumArt} alt="Album Art" style={{ width: '400px', height: '400px' }} />
             <div>
               <p>{song.title}</p>
               <p>{song.artist}</p>
+              <p>Likes: {song.likes}</p>
             </div>
             <button onClick={() => handleDelete(song.id)}>Delete</button>
+            <button onClick={() => handleLike(song.id)}>Like</button>
           </li>
         ))}
       </ul>

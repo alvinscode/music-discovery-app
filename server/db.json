@@ -1,20 +1,18 @@
 {
   "songs": [
     {
-      "id": 1,
-      "title": "Song 1",
-      "artist": "Artist 1"
+      "title": "Midnight Rain",
+      "artist": "Taylor Swift",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
+      "id": 3,
+      "likes": 2
     },
     {
-      "title": "Song 2",
-      "artist": "Artist 2",
-      "id": 2
-    },
-    {
-      "title": "Tally",
-      "artist": "BLACKPINK",
-      "albumArt": "https://images.genius.com/93c8a423c50d81c3e4fbf04876d70957.1000x1000x1.png",
-      "id": 3
+      "title": "you should see me in a crown",
+      "artist": "Billie Eilish",
+      "albumArt": "https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce",
+      "likes": 4,
+      "id": 4
     }
   ]
 }
