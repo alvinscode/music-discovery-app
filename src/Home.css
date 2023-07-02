@@ -1,8 +1,14 @@
+html, body, #root { height: 100%; }
+
 .wrapper {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
   }

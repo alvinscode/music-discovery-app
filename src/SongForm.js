@@ -44,7 +44,7 @@ const SongForm = () => {
       <h1>Add Song</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Title:
+          Song Title:
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
         </label>
         <br />
@@ -54,7 +54,7 @@ const SongForm = () => {
         </label>
         <br />
         <label>
-          Album Art:
+          Album Art URL:
           <input type="text" value={albumArt} onChange={handleAlbumArtChange} />
         </label>
         <br />

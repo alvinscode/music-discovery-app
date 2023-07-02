@@ -46,9 +46,9 @@ const Songs = () => {
           <li key={song.id}>
             <img src={song.albumArt} alt="Album Art" style={{ width: '200px', height: '200px' }} />
             <div>
-              <p>{song.title}</p>
-              <p>{song.artist}</p>
-              <p>Likes: {song.likes}</p>
+              <p className="title">{song.title}</p>
+              <p className="artist">{song.artist}</p>
+              <p className="likes">Likes: {song.likes}</p>
             </div>
             <button onClick={() => handleLike(song.id)}>Like</button>
             <button onClick={() => handleDelete(song.id)}>Delete</button>
