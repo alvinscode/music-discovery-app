@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './SongForm.css'
 
 const SongForm = () => {
   const [title, setTitle] = useState('');
@@ -39,7 +40,7 @@ const SongForm = () => {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <h1>Add Song</h1>
       <form onSubmit={handleSubmit}>
         <label>

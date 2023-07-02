@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Songs.css'
 
 const Songs = () => {
   const [songs, setSongs] = useState([]);
@@ -38,7 +39,7 @@ const Songs = () => {
   const sortedSongs = [...songs].sort((a, b) => b.likes - a.likes);
 
   return (
-    <div>
+    <div className="wrapper">
       <h1>Songs</h1>
       <ul>
         {sortedSongs.map((song) => (
