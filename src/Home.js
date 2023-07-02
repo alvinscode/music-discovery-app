@@ -19,6 +19,7 @@ const Home = () => {
 
   return (
     <div>
+      <h1>Welcome to Music Discovery App!</h1>
       <h2>Featured Artists</h2>
       <ul>
         {featuredArtists.map((song) => (
