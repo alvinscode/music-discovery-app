@@ -7,7 +7,7 @@ const SongForm = () => {
   const [albumArt, setAlbumArt] = useState('');
 
   const onSongAdded = () => {
-    axios.get('http://localhost:8000/songs').then((response) => {
+    axios.get('http://localhost:3000/songs').then((response) => {
       console.log(response.data);
     });
   };
@@ -22,7 +22,7 @@ const SongForm = () => {
       likes: 0
     };
 
-    axios.post('http://localhost:8000/songs', newSong).then(() => {
+    axios.post('http://localhost:3000/songs', newSong).then(() => {
       setTitle('');
       setArtist('');
       setAlbumArt('');

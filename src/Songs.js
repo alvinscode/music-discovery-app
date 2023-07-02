@@ -5,13 +5,13 @@ const Songs = () => {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/songs').then((response) => {
+    axios.get('http://localhost:3000/songs').then((response) => {
       setSongs(response.data);
     });
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:8000/songs/${id}`).then(() => {
+    axios.delete(`http://localhost:3000/songs/${id}`).then(() => {
       setSongs((prevSongs) => prevSongs.filter((song) => song.id !== id));
     });
   };
@@ -21,7 +21,7 @@ const Songs = () => {
     const updatedLikes = likedSong.likes + 1;
 
     axios
-      .put(`http://localhost:8000/songs/${id}`, { ...likedSong, likes: updatedLikes })
+      .put(`http://localhost:3000/songs/${id}`, { ...likedSong, likes: updatedLikes })
       .then(() => {
         setSongs((prevSongs) =>
           prevSongs.map((song) => {
