@@ -22,7 +22,11 @@ const Songs = () => {
       <ul>
         {songs.map((song) => (
           <li key={song.id}>
-            <img src={song.albumArt} alt="Album Art" />
+            <img
+              src={song.albumArt}
+              alt="Album Art"
+              style={{ width: '400px', height: '400px' }} // Adjust the width and height
+            />
             <div>
               <p>{song.title}</p>
               <p>{song.artist}</p>
