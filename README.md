@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Usage
 
-https://music-discovery-app.onrender.com/
+https://earnest-sunshine-a5f222.netlify.app/
 
 To add a song to the list, click "Add Song" at the top right. Input a song title, artist, and a URL for an image of the album art. To view the list of songs that have been added, click on "Songs". This will display a list of all the songs that have been added with the "Add Song" form, and will organize the list of songs based off of the ones with the most likes. To the right of the likes button, there is a delete button to remove songs from the list. The top song will have their artist featured on the homepage. The songs and likes are saved on a backend database and will save automatically without requiring a refresh of the page. 
 
