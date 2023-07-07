@@ -4,6 +4,10 @@ Music Discovery App is an single-page application that allows users to add and s
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://github.com/alvinscode/music-discovery-app - Front End Repository
+
+https://github.com/alvinscode/music-discovery-app-backend - Back End Repository
+
 ## Usage
 
 https://earnest-sunshine-a5f222.netlify.app/ - Front End Deployment
